@@ -1,8 +1,21 @@
-def cal_marks(eng, hin,comp,sst,pt):
-    return eng + hin + comp + sst + pt
+def cal_marks(eng : int, hin : int,comp: int,sst:int,pt:int) -> int:
+
+# "-> int" is called a return type annotation.
+
+# It means:
+# This function is EXPECTED to return a value of type integer (int).
+
+# Why we use it:
+# - To make code more readable
+# - To tell other developers what type of value the function returns
+# - Helps IDEs (like VS Code) and tools detect mistakes
+   return eng + hin + comp + sst + pt
+   #print(eng + hin + comp + sst + pt) Answe is None
 # here we store the function to the variable "t" because we can't directly return the 
 t= cal_marks(12,43,65,56,78)
 print(f"total marks {t}.")
+
+
 # This code will NOT give an error.
 
 # def cal_marks(eng, hin, comp, sst, pt):
